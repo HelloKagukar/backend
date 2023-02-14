@@ -13,20 +13,38 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>kagukar</name>
     <description>kagukar</description>
+
     <properties>
         <java.version>17</java.version>
     </properties>
+
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-mongodb -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.diglol.id</groupId>
+            <artifactId>id-mingwx64</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
