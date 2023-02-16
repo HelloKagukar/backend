@@ -4,19 +4,14 @@ import backend.kagukar.data.user.Student;
 import backend.kagukar.data.user.Type;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.Assertions;
-import org.junit.Before;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDate;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
-//@RunWith(SpringRunner.class)
 @SpringBootTest
 @Slf4j
 public class StudentRepositoryTest {
@@ -32,6 +27,7 @@ public class StudentRepositoryTest {
     }
 
     @Test
+    @DisplayName("Create Students")
     public void test_createStudent(){
         student.setEmail("okoroaforkelechi123@gmail.com");
         student.setCreatedDate(LocalDate.now());
