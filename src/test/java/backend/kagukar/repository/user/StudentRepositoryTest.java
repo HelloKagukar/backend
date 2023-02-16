@@ -73,7 +73,6 @@ public class StudentRepositoryTest {
         student.setPhoneNumber("08082167764");
         studentRepository.updateStudent(student);
         org.junit.jupiter.api.Assertions.assertEquals("08082167764", student.getPhoneNumber());
-
     }
 
 }
