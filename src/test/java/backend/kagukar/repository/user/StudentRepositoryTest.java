@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @SpringBootTest
 @Slf4j
@@ -40,6 +41,39 @@ public class StudentRepositoryTest {
         studentRepository.save(student);
         Assertions.assertThat(student.getId()).isNotNull();
         log.info("Created student successfully -> {}", student);
+    }
+
+    @Test
+    @DisplayName("Find a student by id")
+    public void test_findStudentWithA_GivenId() {
+        student = studentRepository.findById("63ed8f653074127b84a4d48b").orElse(null);
+        log.info("Student details --> {}", student);
+    }
+
+    @Test
+    @DisplayName("Find all students")
+    public void test_findAllStudents() {
+        List<Student> students = studentRepository.findAll();
+        log.info("List of students --> {}", students);
+    }
+
+    @Test
+    @DisplayName("Delete a student account")
+    public void test_deleteStudentAccount () {
+        student = studentRepository.findById("63ed8f653074127b84a4d48a").orElse(null);
+        Assertions.assertThat(studentRepository.existsById("63ed8f653074127b84a4d48a")).isTrue();
+        studentRepository.deleteById("63ed8f653074127b84a4d48a");
+    }
+
+    @Test
+    @DisplayName("Update student account")
+    public void test_updateA_StudentAccount(){
+        student = studentRepository.findById("63ed8f653074127b84a4d48b").orElse(null);
+        Assertions.assertThat(student).isNotNull();
+        student.setPhoneNumber("08082167764");
+        studentRepository.updateStudent(student);
+        org.junit.jupiter.api.Assertions.assertEquals("08082167764", student.getPhoneNumber());
+
     }
 
 }
