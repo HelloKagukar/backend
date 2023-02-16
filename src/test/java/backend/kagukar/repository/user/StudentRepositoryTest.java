@@ -33,7 +33,7 @@ public class StudentRepositoryTest {
         student.setEmail("okoroaforkelechi123@gmail.com");
         student.setCreatedDate(LocalDate.now());
         student.setUserType(Type.STUDENT);
-        student.setName("Kelechi Divine");
+        student.setUserName("Kelechi Divine");
         student.setDateOfBirth("16/12/2002");
         student.setPassword("passwordIsStrong");
         student.setPhoneNumber("09152624528");
