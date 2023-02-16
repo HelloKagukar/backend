@@ -14,4 +14,5 @@ public interface StudentRepository extends MongoRepository<Student, String> {
         save(student);
     }
 
+    Student findByEmail(String studentEmail);
 }
