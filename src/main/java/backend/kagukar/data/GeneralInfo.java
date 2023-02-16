@@ -9,13 +9,15 @@ import lombok.NoArgsConstructor;
 @Data
 public abstract class GeneralInfo {
 
-    private String name;
+    private String userName;
 
     private String email;
 
     private String phoneNumber;
 
     private String password;
+
+    private Boolean isVerified;
 
     private String dateOfBirth;
 }
