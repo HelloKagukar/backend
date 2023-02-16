@@ -9,6 +9,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Document
 @Getter
@@ -19,6 +20,8 @@ public class Student extends GeneralInfo {
 
     @Id
     private String id;
+
+    private LocalDateTime modifiedDate;
 
     private LocalDate createdDate;
 
