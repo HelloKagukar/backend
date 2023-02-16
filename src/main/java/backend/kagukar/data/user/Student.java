@@ -1,24 +1,26 @@
 package backend.kagukar.data.user;
 
+import backend.kagukar.data.GeneralInfo;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Data
+import java.time.LocalDate;
+
+@Document
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Document
-public class AppUser {
+public class Student extends GeneralInfo {
 
     @Id
     private String id;
 
-    private String name;
+    private LocalDate createdDate;
 
-    private String phoneNumber;
-
-    private String date;
-
+    private Type userType;
 }
