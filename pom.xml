@@ -6,7 +6,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.0.2</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>backend</groupId>
     <artifactId>kagukar</artifactId>
@@ -23,8 +23,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-<!--            <version>1.18.26</version>-->
-<!--            <scope>provided</scope>-->
         </dependency>
 
         <dependency>
@@ -32,7 +30,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-mongodb -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
@@ -46,12 +43,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.diglol.id</groupId>
-            <artifactId>id-mingwx64</artifactId>
-            <version>0.2.0</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
-
-
     </dependencies>
 
     <build>
