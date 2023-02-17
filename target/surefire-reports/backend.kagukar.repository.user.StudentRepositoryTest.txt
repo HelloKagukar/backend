@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: backend.kagukar.repository.user.StudentRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.408 s <<< FAILURE! - in backend.kagukar.repository.user.StudentRepositoryTest
+test_deleteStudentAccount  Time elapsed: 0.604 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting value to be true but was false
+	at backend.kagukar.repository.user.StudentRepositoryTest.test_deleteStudentAccount(StudentRepositoryTest.java:64)
+
+test_updateA_StudentAccount  Time elapsed: 0.039 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual not to be null
+	at backend.kagukar.repository.user.StudentRepositoryTest.test_updateA_StudentAccount(StudentRepositoryTest.java:72)
+
