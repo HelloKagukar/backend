@@ -1,0 +1,4 @@
+backend\kagukar\KagukarApplicationTests.class
+backend\kagukar\repository\user\ParentRepositoryTest.class
+backend\kagukar\repository\user\StudentRepositoryTest.class
+backend\kagukar\repository\user\TeacherRepositoryTest.class
