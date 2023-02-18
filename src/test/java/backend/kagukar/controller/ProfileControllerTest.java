@@ -43,7 +43,7 @@ public class ProfileControllerTest {
         registerUserDto.setPassword("testpassword");
         registerUserDto.setPhoneNumber("123456");
 
-        this.mockMvc.perform(post("/users")
+        this.mockMvc.perform(post("/users/")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(registerUserDto)))
                 .andExpect(status().isOk())

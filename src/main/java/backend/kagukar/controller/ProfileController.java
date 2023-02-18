@@ -17,13 +17,13 @@ import java.time.LocalDateTime;
 @RestController
 @RequestMapping("/users")
 @Slf4j
-//@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ProfileController {
 
     @Autowired
     private ProfileServiceImpl userService;
 
-    @PostMapping("")
+    @PostMapping("/")
     public ResponseEntity<?> registerProfile(@Valid @RequestBody RegisterUserDto registerDto, HttpServletRequest httpServletRequest) throws Exception {
         if (userService.userProfileDoesNotExist(registerDto.getEmail())) {
             userService.createProfile(registerDto);

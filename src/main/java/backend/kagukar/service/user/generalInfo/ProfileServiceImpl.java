@@ -21,8 +21,8 @@ public class ProfileServiceImpl implements ProfileService {
     @Autowired
     private StudentRepository studentRepository;
 
-    @Autowired
-    private ModelMapper modelMapper;
+//    @Autowired
+    ModelMapper modelMapper;
 
     private Student student;
 
