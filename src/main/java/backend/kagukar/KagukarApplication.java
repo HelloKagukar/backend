@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class KagukarApplication {
     public static void main(String[] args) {
         SpringApplication.run(KagukarApplication.class, args);
+
         System.out.println("Starting application with localization");
     }
 }
