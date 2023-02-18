@@ -1,4 +1,4 @@
-package dto.response;
+package backend.kagukar.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
