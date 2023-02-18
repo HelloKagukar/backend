@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student extends GeneralInfo {
+public class AppUser extends GeneralInfo {
 
     @Id
     private String id;
