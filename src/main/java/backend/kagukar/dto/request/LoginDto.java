@@ -1,4 +1,4 @@
-package dto.request;
+package backend.kagukar.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

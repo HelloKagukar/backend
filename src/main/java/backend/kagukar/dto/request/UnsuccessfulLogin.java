@@ -1,4 +1,4 @@
-package dto.response;
+package backend.kagukar.dto.request;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
@@ -10,14 +10,14 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseDetailsWithObject {
+public class UnsuccessfulLogin {
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm::ss")
     private LocalDateTime timestamp;
 
     private String message;
 
-    private Object data;
+    private String status;
 
     private String path;
 }
