@@ -12,5 +12,6 @@ import org.springframework.data.annotation.Id;
 public class Parent {
     @Id
     private String id;
+
     private AppUser parent;
 }
