@@ -22,17 +22,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class ProfileControllerTest {
 
     @Autowired
-    MockMvc mockMvc;
+    private MockMvc mockMvc;
 
     ObjectMapper objectMapper = new ObjectMapper();
-
-//    private RegisterUserDto registerUserDto;
-
-//    @BeforeEach
-//    public void setUp(){
-//        objectMapper = new ObjectMapper();
-//        registerUserDto = new RegisterUserDto();
-//    }
 
     @Test
     @DisplayName("Create account")

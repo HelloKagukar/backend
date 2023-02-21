@@ -14,7 +14,6 @@ public class KagukarApplication {
         System.out.println("Starting application with localization");
     }
 
-
     @Bean
     public ModelMapper modelMapper() {
         return new ModelMapper();
