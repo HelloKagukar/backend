@@ -15,7 +15,7 @@ import javax.validation.constraints.Size;
 public class RegisterUserDto {
 
     @NotEmpty(message = "User name is required")
-    @Size(min = 2, max = 20, message = "First name should be 2 to 20 character long")
+    @Size(min = 2, max = 20, message = "User name should be 2 to 20 character long")
     private String userName;
 
     @NotEmpty(message = "User email is required")
