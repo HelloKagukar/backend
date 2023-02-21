@@ -22,21 +22,22 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class ProfileControllerTest {
 
     @Autowired
-    private MockMvc mockMvc;
+    MockMvc mockMvc;
 
-    private ObjectMapper objectMapper;
+    ObjectMapper objectMapper = new ObjectMapper();
 
-    private RegisterUserDto registerUserDto;
+//    private RegisterUserDto registerUserDto;
 
-    @BeforeEach
-    public void startUpMethod(){
-        objectMapper = new ObjectMapper();
-        registerUserDto = new RegisterUserDto();
-    }
+//    @BeforeEach
+//    public void setUp(){
+//        objectMapper = new ObjectMapper();
+//        registerUserDto = new RegisterUserDto();
+//    }
 
     @Test
     @DisplayName("Create account")
     public void test_createAccount() throws Exception {
+        RegisterUserDto registerUserDto = new RegisterUserDto();
         registerUserDto.setUserName("I love Jesus");
         registerUserDto.setEmail("ezekielakintunde1@gmail.com");
         registerUserDto.setUserType(Type.STUDENT);
