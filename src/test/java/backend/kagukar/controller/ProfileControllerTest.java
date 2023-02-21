@@ -36,7 +36,7 @@ public class ProfileControllerTest {
 
     @Test
     @DisplayName("Create account")
-    public void testCreateAccount() throws Exception {
+    public void test_createAccount() throws Exception {
         registerUserDto.setUserName("I love Jesus");
         registerUserDto.setEmail("ezekielakintunde1@gmail.com");
         registerUserDto.setUserType(Type.STUDENT);
