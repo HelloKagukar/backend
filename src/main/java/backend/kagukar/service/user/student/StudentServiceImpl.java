@@ -1,7 +1,6 @@
 package backend.kagukar.service.user.student;
 
 import backend.kagukar.data.user.Profile;
-import backend.kagukar.data.user.Type;
 import backend.kagukar.data.user.student.Student;
 import backend.kagukar.repository.user.student.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
