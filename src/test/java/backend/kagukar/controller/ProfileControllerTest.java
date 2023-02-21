@@ -4,7 +4,6 @@ import backend.kagukar.data.user.Type;
 import backend.kagukar.dto.request.RegisterUserDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 
 import org.junit.jupiter.api.DisplayName;
