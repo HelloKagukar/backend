@@ -33,7 +33,7 @@ public class ProfileRepositoryTest {
         profile.setUserType(Type.STUDENT);
         profile.setUserName("Kelechi Divine mah");
         profile.setDateOfBirth("16/12/2002");
-        profile.setPassword("sStrong");
+        profile.setPassword("Strong");
         profile.setPhoneNumber("09152624528");
 
         profileRepository.save(profile);

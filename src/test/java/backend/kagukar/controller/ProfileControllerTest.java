@@ -4,7 +4,6 @@ import backend.kagukar.data.user.Type;
 import backend.kagukar.dto.request.RegisterUserDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 
 import org.junit.jupiter.api.DisplayName;
@@ -24,19 +23,12 @@ public class ProfileControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    private ObjectMapper objectMapper;
-
-    private RegisterUserDto registerUserDto;
-
-    @BeforeEach
-    public void startUpMethod(){
-        objectMapper = new ObjectMapper();
-        registerUserDto = new RegisterUserDto();
-    }
+    ObjectMapper objectMapper = new ObjectMapper();
 
     @Test
     @DisplayName("Create account")
-    public void testCreateAccount() throws Exception {
+    public void test_createAccount() throws Exception {
+        RegisterUserDto registerUserDto = new RegisterUserDto();
         registerUserDto.setUserName("I love Jesus");
         registerUserDto.setEmail("ezekielakintunde1@gmail.com");
         registerUserDto.setUserType(Type.STUDENT);
